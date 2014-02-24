@@ -1,0 +1,42 @@
+.site-footer {
+  
+  color: $color-light;
+  @include adjust-font-size-to($normpx);
+
+  a {
+    color: $color-blue;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  b {
+    font-weight: normal;
+    color: $color-black;
+  }
+
+  .postal {
+    @include trailer(1);
+  }
+
+  .copyright {
+    @include leader(1);
+  }
+
+}
+
+@include breakpoint($tablet) {
+  .postal {
+    @include grid-span(4, 1);
+    @include trailer(0);
+  }
+  .online {
+    @include grid-span(4, 5);
+  }
+  .copyright {
+    @include grid-span(4, 8);
+    @include leader(0);
+    text-align: right;
+  }
+}

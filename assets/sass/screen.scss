@@ -1,0 +1,90 @@
+@import 'compass';
+@import 'singularitygs';
+@import 'breakpoint';
+@import 'modular-scale';
+
+$grids: 6;
+$grids: add-grid(12 at 768px);
+$gutters: 1/4;
+
+.container {
+  // @include background-grid($color: blue);  
+}
+
+
+$ms-base: 14px;
+$ms-important: 24px;
+$ms-ratio: $fifth;
+
+$smallpx      : 12px;
+$normpx       : $ms-base;
+$medpx        : ms(1);
+$largepx      : ms(2);
+$xlargepx     : ms(3);
+$xxlargepx    : ms(4);
+
+$base-font-size    : $normpx;
+$base-line-height  : $medpx;
+
+@include establish-baseline;
+
+$tablet: 768px;
+$desktop: 960px;
+
+$mono : "Apercu Mono Regular", 'Andale Mono', monospace;
+$sans : "Apercu Regular", Calibri, sans-serif;
+
+// ---------------------------------------------------------------------------
+// Colours
+
+$color-white: #fff;
+$color-black: #1c1c1c;
+$color-grey: #666;
+$color-light: #9d9d9d;
+$color-blue: #2670B3;
+$color-blue-mid: #0C3B66; 
+$color-blue-dark: #04121F;
+$color-red: #C0423C;
+
+
+body, input, textarea {
+  font-family: $mono;
+}
+
+body, a {
+  color: $color-grey;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $color-black;
+  a {
+    color: $color-black;
+  }
+}
+
+body {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 1em
+}
+
+.container {
+  @include grid-span(6);  
+  // margin: auto;
+}
+
+main {
+  header {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@include breakpoint($desktop) {
+  
+}
+
+@import "header";
+@import "footer";
+@import "posts";

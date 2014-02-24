@@ -1,0 +1,183 @@
+/* line 61, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 87.5%;
+}
+
+/* line 64, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+/* line 50, ../sass/screen.scss */
+body, input, textarea {
+  font-family: "Apercu Mono Regular", "Andale Mono", monospace;
+}
+
+/* line 54, ../sass/screen.scss */
+body, a {
+  color: #666666;
+}
+
+/* line 58, ../sass/screen.scss */
+h1, h2, h3, h4, h5 {
+  color: #1c1c1c;
+}
+/* line 60, ../sass/screen.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a {
+  color: #1c1c1c;
+}
+
+/* line 65, ../sass/screen.scss */
+body {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 1em;
+}
+
+/* line 71, ../sass/screen.scss */
+.container {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
+/* line 78, ../sass/screen.scss */
+main header a {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_header.scss */
+.site-header {
+  text-align: center;
+}
+/* line 4, ../sass/_header.scss */
+.site-header h1 {
+  width: 31.03448%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 34.48276%;
+  clear: none;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* line 10, ../sass/_header.scss */
+.site-header a {
+  text-decoration: none;
+  display: block;
+}
+/* line 15, ../sass/_header.scss */
+.site-header img {
+  width: 100%;
+  height: auto;
+}
+/* line 20, ../sass/_header.scss */
+.site-header span {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* line 29, ../sass/_header.scss */
+  .site-header h1 {
+    width: 15.25424%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+}
+/* line 1, ../sass/_footer.scss */
+.site-footer {
+  color: #9d9d9d;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+/* line 6, ../sass/_footer.scss */
+.site-footer a {
+  color: #2670b3;
+  text-decoration: none;
+}
+/* line 9, ../sass/_footer.scss */
+.site-footer a:hover {
+  text-decoration: underline;
+}
+/* line 14, ../sass/_footer.scss */
+.site-footer b {
+  font-weight: normal;
+  color: #1c1c1c;
+}
+/* line 19, ../sass/_footer.scss */
+.site-footer .postal {
+  margin-bottom: 1.5em;
+}
+/* line 23, ../sass/_footer.scss */
+.site-footer .copyright {
+  margin-top: 1.5em;
+}
+
+@media (min-width: 768px) {
+  /* line 30, ../sass/_footer.scss */
+  .postal {
+    width: 32.20339%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+    margin-bottom: 0em;
+  }
+
+  /* line 34, ../sass/_footer.scss */
+  .online {
+    width: 32.20339%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 33.89831%;
+    clear: none;
+  }
+
+  /* line 37, ../sass/_footer.scss */
+  .copyright {
+    width: 32.20339%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 59.32203%;
+    clear: none;
+    margin-top: 0em;
+    text-align: right;
+  }
+}
+/* line 1, ../sass/_posts.scss */
+.post {
+  margin-bottom: 6em;
+}
+/* line 3, ../sass/_posts.scss */
+.post header {
+  margin-bottom: 1.5em;
+}
+/* line 5, ../sass/_posts.scss */
+.post header h1, .post header h2 {
+  font-size: 2.25em;
+  line-height: 1em;
+  margin-bottom: 0.3em;
+}
+/* line 8, ../sass/_posts.scss */
+.post header h1 a:hover, .post header h2 a:hover {
+  text-decoration: underline;
+}
+/* line 12, ../sass/_posts.scss */
+.post header .post-meta {
+  font-size: 1.5em;
+  line-height: 1em;
+  color: #666666;
+}
+/* line 17, ../sass/_posts.scss */
+.post img {
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: auto;
+}

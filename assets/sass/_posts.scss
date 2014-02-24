@@ -1,0 +1,23 @@
+.post {
+  @include trailer(4);
+  header {
+    @include trailer(1);
+    h1, h2 {
+      @include adjust-font-size-to($largepx, 1.5);
+      @include trailer(.2);
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    .post-meta {
+      @include adjust-font-size-to($medpx, 1);
+      color: $color-grey;
+    }
+  }
+  img {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: auto;     
+  }
+}

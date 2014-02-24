@@ -1,0 +1,13 @@
+{
+  "name": "my-project-name",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-compass": "~0.7.2",
+    "jshint": "~2.4.4",
+    "grunt-contrib-jshint": "~0.8.0"
+  }
+}

@@ -1,0 +1,36 @@
+.site-header {
+  text-align: center;
+  
+  h1 {
+    @include grid-span(2, 3);
+    @include leader(1);
+    @include trailer(1);
+  }
+  
+  a {
+    text-decoration: none;
+    display: block
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  span {
+    display: none;
+  }
+
+}
+
+
+@include breakpoint($tablet) {
+  .site-header {
+    h1 {
+      @include grid-span(2, 1);
+      @include leader(1);
+      @include trailer(1);
+    }  
+  }
+  
+}
