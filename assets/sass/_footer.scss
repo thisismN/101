@@ -2,7 +2,7 @@
   
   color: $color-light;
   @include adjust-font-size-to($normpx);
-
+  
   a {
     color: $color-blue;
     text-decoration: none;
@@ -16,6 +16,8 @@
     color: $color-black;
   }
 
+
+
   .postal {
     @include trailer(1);
   }
@@ -27,16 +29,26 @@
 }
 
 @include breakpoint($tablet) {
-  .postal {
-    @include grid-span(4, 1);
-    @include trailer(0);
-  }
-  .online {
-    @include grid-span(4, 5);
-  }
-  .copyright {
-    @include grid-span(4, 8);
-    @include leader(0);
-    text-align: right;
+  .site-footer {
+    @include isolation-span(12, 1, both);
+    @include padding-trailer(4);
+ 
+    .postal {
+      @include grid-span(4, 1);
+      @include trailer(0);
+      float: left
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .online {
+      @include grid-span(4, 5);
+    }
+    .copyright {
+      @include grid-span(4, 8);
+      @include leader(0);
+      text-align: right;
+    }
   }
 }

@@ -1,5 +1,7 @@
 .post {
   @include trailer(4);
+
+
   header {
     @include trailer(1);
     h1, h2 {
@@ -14,10 +16,33 @@
       color: $color-grey;
     }
   }
+
   img {
-    text-align: center;
+    // text-align: center;
     display: block;
     width: 100%;
     height: auto;     
+    clear: both;
+
   }
+}
+
+@include breakpoint($desktop) {
+  .post {
+    @include isolation-span(12, 1, both);
+    .post-content {
+      // @include grid-span(12, 1);
+      // background-color: red;
+      p {
+        @include isolation-span(8, 1, both);
+        float: left;
+        clear: both;
+        img {
+          // @include grid-span(12, 1, 8);
+        }
+      }    
+      
+    }
+  }
+  
 }

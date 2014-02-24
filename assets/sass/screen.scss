@@ -3,6 +3,9 @@
 @import 'breakpoint';
 @import 'modular-scale';
 
+$tablet: 768px;
+$desktop: 960px;
+
 $grids: 6;
 $grids: add-grid(12 at 768px);
 $gutters: 1/4;
@@ -28,8 +31,11 @@ $base-line-height  : $medpx;
 
 @include establish-baseline;
 
-$tablet: 768px;
-$desktop: 960px;
+@include breakpoint($desktop) {
+  body {
+    font-size: 120%  
+  }
+}
 
 $mono : "Apercu Mono Regular", 'Andale Mono', monospace;
 $sans : "Apercu Regular", Calibri, sans-serif;
